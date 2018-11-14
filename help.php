@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <title>Results!</title>
+  <title>Help!</title>
   <meta charset="utf-8" />
   <meta name="Author" content="Arieh Gennello" />
   <style>
@@ -16,27 +16,25 @@
   </style>
 </head>
 <body>
-<h1>Welcome! Please wait while we fill the databases!</h1>
+<h1>This is the Help Page</h1>
+<div id="Menu" style = "">
+<span style = "color: #000000; font-family: 'Palatino Linotype'; font-size: 15px;">
+<a href = "SteamSpy_Search.html">Home
+</a>
+    |   
+<a href = "help.php">Help
+</a>
+</span>
+</div>
 </br>
-<?php
-	require_once('capconnect.php');
-	require_once('SteamSpy_FillDB.php');
-	require_once('PriceChart_FillDB.php');
-	require_once('Twitch_FillDB.php');
-	$dbh = ConnectDB();
-		echo '<div> Filling Steam...'; 
-		//fillSteam();
-		echo 'Complete!';
-		echo '</div>';
-		echo '</br>';
-		echo '<div> Filling PriceChart...';
-		fillPriceChart();
-		echo 'Complete!';
-		echo '</div>';
-		echo '</br>';
-header("Location: Search.php");
-	exit;
-?>
+<p>
+	<h2> I cannot find the game I am looking for! </h2>
+	Please be sure you are spelling the name of the game correctly, or search using part of the name to get the game you want!</br>
+	<h2> There is too much data on the screen!</h2>
+	You are most likely getting too many games from your search. Please refine your search to a specific game and the data will be much more compact!</br>
+	<h2> Why is there very little information in the Twitch Data tables?</h2>
+	The Twitch table in the database gets data added to it on each search rather than all at once. Search for the game(s) a few times to get more data. 
+</p>
 </body>
 <footer style="border-top: 2px solid red; margin-top: 1ex;">
     Arieh Gennello | Felix Cori IV | Karl Kiocho
