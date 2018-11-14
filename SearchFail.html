@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>Whoops!</title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Arieh Gennello" />
+  <style>
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table.fancy    { border-width: 1px 3px 3px 1px;
+                     border-collapse: collapse;
+                     border: solid blue; }
+    table.fancy td { border: 1px dotted black;
+                     padding: 2px 5px;
+                     margin: 5px 20px;
+                     text-align: right; }
+  </style>
+</head>
+<body>
+<h1>That was not a valid name! Please enter the name of the game!</h1>
+<div id="Menu" style = "">
+<span style = "color: #000000; font-family: 'Palatino Linotype'; font-size: 15px;">
+<a href = "Search.html">Home
+</a>
+    |   
+<a href = "help.php">Help
+</a>
+</span>
+</div>
+</br>
+<form action="Search.php" method="post">
+
+  Name of the Game: <input type="text" name="gname" />
+  <br />
+  <input type="submit" />
+
+</form>
+</br>
+If you are confused and need help, check out our <a href = "help.php">Help Page</a>!
+</body>
+<footer style="border-top: 2px solid red; margin-top: 1ex;">
+    Arieh Gennello | Felix Cori IV | Karl Kiocho
+
+<span style="float: right;">
+<a href="http://validator.w3.org/check/referer">HTML5</a> /
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+    CSS3 </a>
+</span>
+</footer>
+</html>
