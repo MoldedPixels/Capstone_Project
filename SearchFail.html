@@ -2,48 +2,44 @@
 <head>
   <title>Whoops!</title>
   <meta charset="utf-8" />
-  <meta name="Author" content="Arieh Gennello" />
+  <meta name="Author" content="Arieh Gennello, Felix Cori IV, Karl Kiocho />
+  <meta name="description" content="This page is displayed if the user's input returned zero results."/>
   <style>
     a { text-decoration: none; }
     a:hover { text-decoration: underline; }
-    table.fancy    { border-width: 1px 3px 3px 1px;
-                     border-collapse: collapse;
-                     border: solid blue; }
-    table.fancy td { border: 1px dotted black;
-                     padding: 2px 5px;
-                     margin: 5px 20px;
-                     text-align: right; }
+	body{background-color: #eeeeee;}
+	div.shift{padding-left: 3%;}
+	input[type=text], select { width: 20%; height: 30px;text-align: center; border: 1px solid #ccc; border-radius: 4px;box-sizing: border-box;}
+	input[type=submit]{background-color: #4CAF50;border: none;color: white;padding: 16px 32px;text-decoration: none;margin: 4px 2px;cursor: pointer;}
   </style>
 </head>
 <body>
-<h1>That was not a valid name! Please enter the name of the game!</h1>
-<div id="Menu" style = "">
-<span style = "color: #000000; font-family: 'Palatino Linotype'; font-size: 15px;">
-<a href = "Search.html">Home
-</a>
-    |   
-<a href = "help.php">Help
-</a>
-</span>
-</div>
-</br>
-<form action="Search.php" method="post">
-
-  Name of the Game: <input type="text" name="gname" />
-  <br />
-  <input type="submit" />
-
-</form>
-</br>
-If you are confused and need help, check out our <a href = "help.php">Help Page</a>!
+	<center><h1>That was not a valid name! Please enter the name of the game!</h1></center>
+	<center><div id="Menu" style = "">
+		<span style = "color: #000000; font-family: 'Palatino Linotype'; font-size: 15px;">
+			<a href = "Search.html">Home</a>
+			|   
+			<a href = "help.php">Help</a>
+		</span>
+	</div></center>
+	</br>
+	<hr>
+	</br>
+	<form action="Search.php" method="post">
+		<center><div>
+			<strong>Name of the Game: </br> </br> <input type="text" name="gname" /></strong>
+			</br>
+			</br>
+			<input type="submit" />
+		</div></center>
+	</form>
+	</br>
+	<center><h3>If you are confused and need help, check out our <a href = "help.php">Help Page</a>!</h3></center>
+	</br>
+	</br>
+	</br>
 </body>
-<footer style="border-top: 2px solid red; margin-top: 1ex;">
-    Arieh Gennello | Felix Cori IV | Karl Kiocho
-
-<span style="float: right;">
-<a href="http://validator.w3.org/check/referer">HTML5</a> /
-<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
-    CSS3 </a>
-</span>
+<footer style="border-top: 2px solid red; margin-top: 1ex; position: fixed; left: 50; right: 100; bottom:10;">
+    <center>Arieh Gennello | Felix Cori IV | Karl Kiocho</center>
 </footer>
 </html>

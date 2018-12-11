@@ -1,7 +1,7 @@
 <?php
 
-// ConnectDB() - takes no arguments, returns database handle
-// USAGE: $dbh = ConnectDB();
+// Creates PDO to get and edit data in the database.
+// Note for Line 16: LOCAL_INFILE is enabled to allow for the CSV file to be read from a different directory location rather than the MySQL directory.
 function ConnectDB() {
 
     /*** mysql server info ***/
@@ -17,7 +17,6 @@ function ConnectDB() {
     } catch(PDOException $e) {
         die ('PDO error in "ConnectDB()": ' . $e->getMessage() );
     }
-	//echo "connection established";
     return $dbh;
 	
 }
